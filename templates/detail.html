@@ -1,0 +1,6 @@
+{% extends 'base.html' %} {% block title %}Detail View{% endblock %} 
+{% block body %} 
+{% comment %} <a href="{% url 'feed:index'%}">&larr; Go Back </a> {% endcomment %}
+{{object.text}}
+<img src="{{object.image.url}}" class="img-fluid rounded">
+{% endblock %}
